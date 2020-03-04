@@ -1,0 +1,24 @@
+<!--pages/posts/posts-detail/detail.wxml-->
+<view class="detail-container">
+  <image class="head-image" src="{{ isPlayImgMusic ? detailData.music.coverImg : detailData.headImgSrc }}"></image>
+  <image class="audio" catchtap="onMusicTap" src="{{isPlayImgMusic ? '../../images/music/music-stop.png' : '../../images/music/music-start.png'}}"></image>
+  <view class="author-date">
+    <image class="avatar" src="{{ detailData.avatar }}"></image>
+    <text class="author">{{ detailData.author }}</text>
+    <text class="const-text">发表于</text>
+    <text class="date">{{ detailData.dataTime }}</text>
+  </view>
+  <text class="title">{{ detailData.title }}</text>
+  <view class="tool">
+    <view class="circle-img">
+    <!-- 测试缓存时使用的代码 -->
+      <!-- <image catchtap="onCollectionTap" src="../../images/icon/collection.png"></image>
+      <image catchtap="onShareTap" class="share-img" src="../../images/icon/share.png"></image> -->
+      <image wx:if="{{ collected }}" catchtap="onCollectionTap"  src="../../images/icon/collection.png"></image>
+      <image wx:else catchtap="onCollectionTap"  src="../../images/icon/collection-anti.png"></image>
+      <image catchtap="onShareTap" class="share-img" src="../../images/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view> 
+  </view>
+  <text class="detail">{{ detailData.detail }}</text>
+</view>

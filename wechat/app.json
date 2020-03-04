@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/camera/camera",
+    "pages/welcome/welcome",
+    "pages/movies/movies",
+    "pages/movies/movie-detail",
+    "pages/posts/posts",
+    "pages/posts/posts-detail/detail",
+    "pages/logs/logs",
+    "pages/movies/more-movies"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#405f80",
+    "navigationBarTextStyle": "white"
+  },
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "文章",
+        "iconPath": "/pages/images/tab/yuedu.png", 
+        "selectedIconPath": "/pages/images/tab/yuedu_hl.png" 
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "/pages/images/tab/dianying.png",
+        "selectedIconPath": "/pages/images/tab/dianying_hl.png"
+      },
+      {
+        "pagePath": "pages/camera/camera",
+        "text": "拍照",
+        "iconPath": "/pages/images/tab/ciwei.png",
+        "selectedIconPath": "/pages/images/tab/ciwei_hl.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,9 @@
+@import "movie-grid/movie-grid-template.wxss";
+.single-view-container {
+  float: left;
+  margin-bottom: 40rpx;
+}
+
+.grid-container {
+  margin: 40rpx 0 40rpx 6rpx;
+}
